@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>termometer kalkulator</title>
+</head>
+<body>
+    <h1>termometer-kalkulator</h1>
+
+
+    <script>
+        var fahrenheit = prompt ("skriv inn temperatur i fahrenheit ");
+        var celsius = (fahrenheit - 32)/1.8;
+        console.log(celsius);
+        document.write(`<p1>${fahrenheit} grader fahrenheit er ${celsius.toFixed(2)} grader celsius </p1>`);
+
+
+        var radius = prompt ("skriv inn radius av en kule");
+        const PI = 3.14;
+        var omkrets =  ( PI * 2*radius);
+        console.log (omkrets);
+        document.write (`<p2>hvis radiusen er ${radius} da er omkretsen ${omkrets} cm</p2> `);
+
+
+
+        var radiusVolum= prompt ("skriv in radius for volum");
+        var volum = (4*PI*radius*radius*radius )/ 3 ;
+        document.write (`<p3>${radiusVolum} radius ${volum} volum </p3>`);
+
+
+        var radiusAreal= prompt (" radius for areal ");
+        var areal = (4*PI*radius*radius);
+        document.write (`<p4>${radiusAreal} radius ${areal} areal på kula </p4>`);
+
+
+
+
+</script>
+
+</body>
+</html>
